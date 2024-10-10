@@ -1,0 +1,22 @@
+# Define a list to store horror movies
+horror_movies = []
+
+# Function to add a movie
+def add_movie(movie_id, title, rating):
+    horror_movies.append({'Movie_ID': movie_id, 'Movie_Title': title, 'Rating': rating})
+
+# Function to display all movies
+def display_movies():
+    print("Horror Movies:")
+    print("| Movie_ID | Movie_Title                | Rating |")
+    for movie in horror_movies:
+        print(f"| {movie['Movie_ID']:9} | {movie['Movie_Title']:25} | {movie['Rating']:6} |")
+
+# Adding horror movies
+add_movie(226, "The Shining", 8.4)
+add_movie(100, "Gremlins", 7.2)
+add_movie(116, "The Amityville Horror", 6.2)
+add_movie(101, "Friday the 13th", 6.5)  # Adding Friday the 13th
+
+# Display all horror movies
+display_movies()
